@@ -4,6 +4,12 @@
     margin: 0%;
     font-family: 'Courier New', Courier, monospace;
 
+
+}
+
+body {
+
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, hsl(0, 0%, 100%) 300px), repeating-linear-gradient(#05ebfc55, #67edff);
 }
 
 .container {
@@ -21,35 +27,50 @@
     background: #00d2e9;
     width: 400px;
     height: 400px;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 580px), repeating-linear-gradient(#2ff1ff55, #00dcf9);
 
 }
 
-#btn {
+.btn {
 
-    background: #ffffff;
+    background: #dcdcdc;
     width: 80%;
     margin: 8px;
     height: 25px;
     font-size: 22px;
     font-weight: 700;
+    color: #000000;
+    box-shadow: #000000 5px 5px 5px;
+    border-radius: 5px;
 
 }
 
-#btn:hover {
-    background-color: rgb(206, 206, 206);
+.btn:hover {
+    background-color: rgb(47, 235, 249);
+    transform: scale(1.009);
+    box-shadow: #000000 5px 5px 10px;
+    border: 2px black solid;
+
 }
 
 #next-btn {
     background: #ffffff;
-    width: 40%;
+    width: 30%;
     margin: 4px;
     height: 20px;
     font-size: 15px;
     font-weight: 700;
-}
-#next-btn:hover{
+    color: rgb(21, 22, 22);
 
-    background: rgb(0, 136, 255)191;
+    border: 2px black solid;
+    border-radius: 5px;
+
+}
+
+#next-btn:hover {
+
+    background: rgb(255, 255, 255)191;
+    transform: scale(1.05);
 
 }
 
@@ -58,17 +79,16 @@ h1 {
     text-align: center;
     margin: 20px;
     text-decoration: underline;
+}
 
-}
-h2{
-    
-}
-#question{
+#question {
     text-align: left;
     margin-left: 10%;
-    color: rgb(0, 107, 101);
+    color: rgb(4, 4, 4);
+    font-size: 16px;
 }
-footer{
+
+footer {
     color: #000000;
     margin-top: 20px;
     font-size: x-small;
