@@ -94,7 +94,7 @@ footer {
     font-size: x-small;
     font-weight: bolder;
 }
-.correct
+.correct:hover
 {
     background-color: green;
 }
