@@ -20,7 +20,7 @@ function check(event)
     {
         event.target.classList.add("correct");
         console.log("correct");
-        
+    
     }
 <<<<<<< HEAD
     
