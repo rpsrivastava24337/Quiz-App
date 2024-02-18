@@ -22,6 +22,10 @@ function check(event)
         console.log("correct");
         
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 7ab7f3e6ea969a08895e535932c9757fd4385fc7
     
 }
