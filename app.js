@@ -1,31 +1,43 @@
 //https://opentdb.com/api.php?amount=10&type=multiple
 
-let data;
-async function fetching()
-{
-const response=await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
-data=await response.json();
-document.getElementById("question").innerHTML=data.results[0].question;
-document.getElementById("btn2").innerHTML=data.results[0].incorrect_answers[0];
-document.getElementById("btn3").innerHTML=data.results[0].incorrect_answers[1];
-document.getElementById("btn1").innerHTML=data.results[0].correct_answer;
-document.getElementById("btn4").innerHTML=data.results[0].incorrect_answers[2];
+let apidata, data;
+let correctOptions
+let incorrectOptions
+let options
+let index = 0
+async function fetching() {
+    const response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
+    apidata = await response.json();
+    data = apidata.results[0]
+    display(data);
 }
 fetching();
-function check(event)
-{
-    var data2=event.target.innerHTML;
-    
-    if(data2==data.results[0].correct_answer)
-    {
-        event.target.classList.add("correct");
-        console.log("correct");
-        
-    }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 7ab7f3e6ea969a08895e535932c9757fd4385fc7
-    
+function display(value) {
+    document.getElementById("question").innerHTML = value.question;
+    options = document.querySelectorAll(".btn")
+    incorrectOptions = value.incorrect_answers
+    correctOptions = value.correct_answer
+    incorrectOptions.splice((Math.floor(Math.random() * incorrectOptions.length + 1)), 0, correctOptions)
+
+    options.forEach(element => {
+
+        element.innerHTML = incorrectOptions[index]
+        index++
+
+
+
+    });
 }
+
+
+// function check(event) {
+//     var data2 = event.target.innerHTML;
+
+//     if (data2 == data.results[0].correct_answer) {
+//         event.target.classList.add("correct");
+//         console.log("correct");
+
+//     }
+
+// }

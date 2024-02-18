@@ -37,7 +37,7 @@ body {
     width: 80%;
     margin: 8px;
     height: 25px;
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 700;
     color: #000000;
     box-shadow: #000000 5px 5px 5px;
@@ -94,11 +94,12 @@ footer {
     font-size: x-small;
     font-weight: bolder;
 }
-.correct:hover
-{
+
+.correct:hover {
     background-color: green;
 }
-.correct:hover{
+
+.correct:hover {
 
     background-color: green;
 }
