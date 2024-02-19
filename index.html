@@ -1,5 +1,5 @@
-
 <html>
+
 <head>
     <title>Quiz App</title>
 </head>
@@ -9,13 +9,15 @@
     <div class="container">
         <form class="main">
             <h1>Quiz Game</h1>
-            <h2 id="question">First Question</h2><br>
+            <h2 id="question"></h2><br>
 
-            <button id="btn2" type="button" onclick="check(event)" class="btn" type="select">2</button><br>
-            <button id="btn3" type="button" onclick="check(event)" class="btn" type="select">3</button><br>
-            <button id="btn1" type="button" onclick="check(event)" class=" btn" type="select">1</button><br>
-            <button id="btn4" type="button" onclick="check(event)" class=" btn" type="select">4</button><br><br>
-            <button id="next-btn" type="submit">Next</button>
+            <button id="btn2" type="button" onclick="check(event)" class="btn" type="select"></button><br>
+            <button id="btn3" type="button" onclick="check(event)" class="btn" type="select"></button><br>
+            <button id="btn1" type="button" onclick="check(event)" class=" btn" type="select"></button><br>
+            <button id="btn4" type="button" onclick="check(event)" class=" btn" type="select"></button><br><br>
+            <p id="correct"></p>
+            <button id="next-btn" type="submit" onclick="onNext()">Next</button><span id="count" ></span>
+
 
             <footer>
                 <p>Developed by RPS & BKS</p>
